@@ -7,12 +7,12 @@ export default defineConfig({
   server: {
     proxy: {
       '/auth': {
-        target: 'http://google-calendar-backend-sand.vercel.app',
+        target: 'https://google-calendar-backend-sand.vercel.app',
         changeOrigin: true,
         secure: false,
       },
       '/api': {
-        target: 'http://google-calendar-backend-sand.vercel.app',
+        target: 'https://google-calendar-backend-sand.vercel.app',
         changeOrigin: true,
         secure: false,
       },
