@@ -7,12 +7,12 @@ export default defineConfig({
   server: {
     proxy: {
       '/auth': {
-        target: 'http://localhost:4000',
+        target: 'https://google-calendar-frontend.vercel.app/',
         changeOrigin: true,
         secure: false,
       },
       '/api': {
-        target: 'http://localhost:4000',
+        target: 'https://google-calendar-frontend.vercel.app/',
         changeOrigin: true,
         secure: false,
       },
