@@ -4,9 +4,10 @@ import axios from 'axios';
 const CalendarEvents = () => {
   const [events, setEvents] = useState([]);
   const [error, setError] = useState('');
+  const backendUrl = process.env.REACT_APP_BACKEND_URL;
 
   useEffect(() => {
-    axios.get('/api/calendar/events')
+    axios.get(`${backendUrl}/api/calendar/events`)
       .then((response) => setEvents(response.data.events))
       .catch((err) => setError('Error fetching events: ' + err.message));
   }, []);
