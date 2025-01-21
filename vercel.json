@@ -1,12 +1,1 @@
-{
-  "rewrites": [
-    {
-      "source": "/auth/:path*",
-      "destination": "https://google-calendar-backend-sand.vercel.app/auth/:path*"
-    },
-    {
-      "source": "/api/:path*",
-      "destination": "https://google-calendar-backend-sand.vercel.app/api/:path*"
-    }
-  ]
-}
+
