@@ -44,7 +44,7 @@ const Dashboard = () => {
   // const backendUrl = process.env.REACT_APP_BACKEND_URL || 'http://localhost:4000';
 
   useEffect(() => {
-    axios.get("https://google-calendar-backend-sand.vercel.app/api/calendar/events", { withCredentials: true })
+    axios.get("https://google-calendar-backend-sand.vercel.app/api/calendar/events", )
       .then((response) => {
         console.log(response.data); // Check actual response
         setEvents(response.data.events || []); // Safely handle events
