@@ -7,7 +7,7 @@ const CalendarEvents = () => {
   const backendUrl = process.env.REACT_APP_BACKEND_URL;
 
   useEffect(() => {
-    axios.get(`/api/calendar/events`)
+    axios.get(`${backendUrl}/api/calendar/events`)
       .then((response) => setEvents(response.data.events))
       .catch((err) => setError('Error fetching events: ' + err.message));
   }, []);
