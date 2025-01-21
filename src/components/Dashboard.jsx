@@ -50,7 +50,7 @@ const Dashboard = () => {
         setEvents(response.data.events || []); // Safely handle events
       })
       .catch((err) => setError('Error fetching events: ' + err.message));
-  }, [backendUrl]);
+  }, []);
 
   return (
     <div>
