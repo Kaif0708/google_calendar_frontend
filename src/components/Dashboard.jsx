@@ -10,7 +10,7 @@ const Dashboard = () => {
   const backendUrl = process.env.REACT_APP_BACKEND_URL;
 
   useEffect(() => {
-    axios.get(`/api/calendar/events`, { withCredentials: true })
+    axios.get(`${backendUrl}/api/calendar/events`, { withCredentials: true })
       .then((response) => setEvents(response.data.events))
       .catch((err) => setError('Error fetching events: ' + err.message));
   }, []);
