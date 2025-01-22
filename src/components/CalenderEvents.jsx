@@ -7,7 +7,7 @@ const CalendarEvents = () => {
   const backendUrl = process.env.REACT_APP_BACKEND_URL;
 
   useEffect(() => {
-    axios.get("https://google-calendar-backend-sand.vercel.app/api/calendar/events")
+    axios.get("https://google-calendar-backend1.vercel.app/api/calendar/events")
       .then((response) => setEvents(response.data.events))
       .catch((err) => setError('Error fetching events: ' + err.message));
   }, []);
