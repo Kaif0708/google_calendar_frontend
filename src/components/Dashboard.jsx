@@ -43,7 +43,7 @@ const Dashboard = () => {
   const [error, setError] = useState('');
 
   useEffect(() => {
-    axios.get('https://google-calendar-backend1.vercel.app/api/calendar/events', { withCredentials: true })
+    axios.get('https://google-calender-backend1.vercel.app/api/calendar/events', { withCredentials: true })
       .then((response) => setEvents(response.data.events))
       .catch((err) => setError('Error fetching events: ' + err.message));
   }, []);
