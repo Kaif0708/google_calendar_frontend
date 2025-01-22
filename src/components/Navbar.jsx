@@ -5,8 +5,8 @@ const Navbar = () => {
     // const backendUrl = process.env.REACT_APP_BACKEND_URL;
 //backend is called 
     <nav style={{ padding: '10px', backgroundColor: '#f8f9fa' }}>
-      <a href="https://google-calender-backend1.vercel.app/auth/google" style={{ marginRight: '15px' }}>Login with Google</a>
-      <a href="https://google-calender-backend1.vercel.app/auth/logout">Logout</a>
+      <a href="https://google-calendar-backend1.vercel.app/auth/google" style={{ marginRight: '15px' }}>Login with Google</a>
+      <a href="https://google-calendar-backend1.vercel.app/auth/logout">Logout</a>
     </nav>
   );
 };
